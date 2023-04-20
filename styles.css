@@ -5,6 +5,14 @@ body {
     color: #FAF9F6;
 }
 
+a {
+    color: #88b5dd;
+}
+
+a:hover {
+    color: #c3daee;
+}
+
 .border-white {
     border: 1px solid #A3A3A3;
 }
