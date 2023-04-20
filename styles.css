@@ -4,3 +4,8 @@ body {
     background-attachment: fixed;
     color: #FAF9F6;
 }
+
+#create_issue {
+    max-width: 10em;
+    margin: 1em;
+}
