@@ -14,6 +14,7 @@
         <img src="./logo.png" alt="Super.Human.Installer logo" class="mx-auto d-block" />
       </div>
       <p>Super.Human.Installer helps you install the latest and greatest HCL Domino technologies easily.</p>
+      <h3>Download</h3>
       <div class="row">
         <div class="col-md-4">
           <a href="https://github.com/Moonshine-IDE/Super.Human.Installer/releases/download/0.8.12/SuperHumanInstaller-Setup.pkg" type="button" class="btn btn-primary btn-block">MacOS</a>
@@ -25,6 +26,59 @@
           <a href="https://github.com/Moonshine-IDE/Super.Human.Installer/releases/download/0.8.12/SuperHumanInstaller.tar.gz" type="button" class="btn btn-primary btn-block">Linux</a>
         </div>
       </div>
+
+      <h2>What is Super.Human.Installer?</h2>
+      
+      <p>Super.Human.Installer is part of Genesis.Directory App Cataolog where you can deploy and update your open source applications with one line.</p>
+      <a href="">Click here to find out more</a>
+
+      <p>Super.Human.Installer is Open Source Software (OSS). Open Source Software is software that is distributed with its source code, making it available for use, modification, and distribution with its original rights.</p>
+      <a href="">Source Code on GitHub</a>
+
+      <h2>Why do you need it</h2>
+      <p>Supper.Human.Installer lets you save massive amounts of time. First, it creates HCL Domino 12.0.2 server on your desktop computer running MacOS, Windows or even Linux. The server can be preconfigured with HCL technologies like Nomad Web, Traveler, Leap, AppDev ore REST API (formerly KEEP). Then, it gives you easy access to Genesis App Catalog, where you can install a broad array of software from OpenNTF, Prominic, HelpSoft, Vigilus CRM, and other commercial vendors with just one simple console command.</p>
+
+      <p>This is the power of DevOps</p>
+
+      <p>DevOps is a software development methodology that emphasizes collaboration and communication between development teams and operations teams, with the goal of releasing software more quickly, raliably, and efficiently. DevOps combines elements of software development, quality assurance, and IT operations, and involves the use of automation tools nad agile practices to streamline the software delivery process.</p>
+
+      <p>A dedicated app catalog or app marketplace can serve as a secure centralized platform for users to discover and download new apps, making it easier for users to find and try new software.</p>
+
+      <h2>How to use it?</h2>
+      <p>Super.Human.Installer leverages the 
+        <a href=""><b>VirtualBox</b></a> 
+        virtual machine manager and the 
+        <a href=""><b>Vagrant</b></a> 
+        <a href=""><b>DevOps</b></a> 
+        software automation tool to create a Linux based VM on your local computer. There will be one for each <a href=""><b>Domino</b></a> 
+        server you create.
+        <br />
+        <br />
+        You should only run 1-2 at a time, depending upon your computer's resources. You can define as many as you like, and in each one you can experiment with different configurations and 
+        <a href=""><b>Genesis.Directory</b></a> 
+        add-ons -- or your own development ideas!
+        <br />
+        <br />
+        The specific steps which are followed based upon the user interface presented by the Super.Human.Installer application are written to a configuration file called a 
+        <a href=""><b>YAML</b></a> 
+        file. This YAML file provides instructions to Vagrant such as which version of Domino to install and whether to include additional features like Nomad Web and Node.js development using the AppDev Pack.<br />
+        <br />
+        The actual control files and scripts can be inspected by you by clicking the Open Server Directory button on any of the existing server instances.
+      </p>
+
+      <ol>
+        <h3>Steps:</h3>
+        <li>Download and install Super.Human.Installer for you operating system. Launch the app.</li>
+        <li>Click the Create New Server button.</li>
+        <li>Provide the hostname and the organization name. The computer name will be populated automatically. Make sure it's correct.</li>
+        <li>Export SAFE.IDS from your HCL Notes client and locate it using a button.</li>
+        <img src="configure.png" alt="New server configuration" />
+        <li>Click on the Manage button. Here you can provide all HCL technologies you want to have on your server.</li>
+        <li>At minimum you need to provide HCL Notes archive (to be installed on a Linux server). Click on the +Installer button and locate .tar archive. You can alos include a hotfix and a fixpack.</li>
+        <li>Then you can configure other technologies. First enable the switch next to the technology you want to include. The installer button will be anabled. Click on it and locate the necessary installer.</li>
+        <img src="manage.png" alt="Manage technologies" />
+      </ol>
+
     </div>
   </div>
 </div>
