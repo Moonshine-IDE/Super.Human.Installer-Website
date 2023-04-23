@@ -3,21 +3,25 @@ body {
     background: linear-gradient(45deg, rgba(50,50,50,1) 0%, rgba(22,22,22,1) 100%);
     background-attachment: fixed;
     color: #FAF9F6;
+    font-size: 2em;
 }
 
 h1 {
     margin-top: 1em;
     margin-bottom: 1em;
+    font-size: 3.5em;
 }
 
 h2 {
     margin-top: 4em;
     margin-bottom: 1em;
+    font-size: 3em;
 }
 
 h3 {
     margin-top: 2em;
     margin-bottom: 1em;
+    font-size: 2.5em;
 }
 
 a {
@@ -26,6 +30,10 @@ a {
 
 a:hover {
     color: #c3daee;
+}
+
+.download-btn {
+    font-size: 2em;
 }
 
 img {
