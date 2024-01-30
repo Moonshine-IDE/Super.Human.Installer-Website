@@ -88,18 +88,32 @@
       </div>
 
       <ol>
-        <h3>Steps:</h3>
-        <li>Download and install Super.Human.Installer for your operating system. Launch the app.</li>
-        <li>Click the Create New Server button.</li>
-        <li>Provide the hostname and the organization name. The computer name will be populated automatically. Make sure it's correct.</li>
-        <li>Export SAFE.IDS from your HCL Notes client and locate it using a button.</li>
+        <h3 id="configuration-steps">Configuration Steps:</h3>
+
+        <li><b>Download and Installation</b>: Begin by downloading and installing SuperHumanInstaller. Once installed, launch the application to initiate the setup process.</li>
+        <li><b>Prerequisite Software</b>: Ensure that VirtualBox and Vagrant are installed on your system. If they are not, SuperHumanInstaller will prompt you to download and install them. This is a crucial step for a smooth setup.</li>
+        <li><b>Server Creation</b>: Click on the 'Create New Server' button. Select 'Standalone Domino Server' from the options and proceed by clicking 'Continue'.</li>
+        <li><b>Server Configuration</b>: Enter the required details such as Hostname and Organization Certifier. The 'Computer Name' field will auto-populate. Verify its accuracy before proceeding.</li>
+
         <img class="border border-white center-block" src="configure.png" alt="New server configuration" />
-        <li>Click on the Manage button. Here you can provide all HCL technologies you want to have on your server.</li>
-        <li>HCL technologies can be downloaded from the official <a href="https://hclsoftware.flexnetoperations.com/" target="_blank">HCL FlexNet</a> webpage.</li>
-        <li>At minimum, you need to provide HCL Notes archive (to be installed on a Linux server). Click on the +Installer button and locate .tar archive. You can also include a hotfix and a fixpack.</li>
-        <li>Then you can configure other technologies. First, enable the switch next to the technology you want to include. The installer button will be enabled. Click on it and locate the necessary installer.</li>
+
+        <li><b>SAFE.IDS Export</b>: Export SAFE.IDS from your HCL Notes client. Utilize the provided button in the interface to locate and select the exported file.</li>
+        <li><b>Manage HCL Technologies</b>: Access the 'Manage' section to select the HCL technologies you wish to install on your server. These can be downloaded from the <a href="https://hclsoftware.flexnetoperations.com/" target="_blank">HCL FlexNet</a> website. This step allows for a customized server environment.</li>
+        <li><b>HCL Notes Installation</b>: At a minimum, you need to install the HCL Notes archive on a Linux server. Use the '+Installer' button to locate and select the .tar archive file. Optionally, you can include a hotfix and a fixpack for enhanced performance.</li>
+        <li><b>Additional Technologies Configuration</b>: To include other technologies, enable the toggle next to each desired technology. Then, use the corresponding installer button to locate and install the necessary files.</li>
+
         <img class="border border-white center-block" src="manage.png" alt="Manage technologies" />
-    </ol>
+
+        <li><b>Server Provisioning</b>: After configuring your selections, return to the main menu and initiate the server provisioning process. This step is critical for setting up the server with your specified configurations.</li>
+        <li><b>Progress Monitoring</b>: Monitor the progress of the installation through the attached console. In case of errors, please report them to our support team for assistance.</li>
+        <li><b>Completion and Verification</b>: Upon successful provisioning, the server will start, and a welcome page will open in your browser. Note that adding the SSL certificate to your browser may be necessary for secure access.</li>
+        <li><b>Hosts File Update</b>: Copy the highlighted line into your hosts file at the following locations:
+        <ul>
+          <li>macOS/Linux: <code>/etc/hosts</code></li>
+          <li>Windows: <code>C:\Windows\System32\Drivers\etc\hosts</code></li>
+        </ul>
+      </li>
+      <li><b>Final Step</b>: Click the provided link to access the portal. Successful access confirms correct configuration.</li>
 
       <div class="col-md-12 text-center">
         If you run into any issues, please report them to us:
